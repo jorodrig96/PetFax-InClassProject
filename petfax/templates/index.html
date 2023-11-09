@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Your best srouce for pet information.</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1>Welcome to the PetFax App!</h1>
+    {% for pet in pets %}
+    <h2> {{ pet.pet_name }}</h2>
+        <img src="{{ pet.pet_photo }}" alt=" Photo of out happy pet {{ pet.pet_name }}" />
+    <p> {{ pet.pet_fact }} </p> 
+    {% endfor %}
+</body>
+
+</html>
