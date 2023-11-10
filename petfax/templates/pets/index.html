@@ -12,8 +12,8 @@
     <h1>Welcome to the PetFax App!</h1>
     {% for pet in pets %}
     <h2> {{ pet.pet_name }}</h2>
-        <img src="{{ pet.pet_photo }}" alt=" Photo of out happy pet {{ pet.pet_name }}" />
     <p> {{ pet.pet_fact }} </p> 
+    <img src="{{ pet.pet_photo }}" alt=" Photo of out happy pet {{ pet.pet_name }}" />
     {% endfor %}
 </body>
 
